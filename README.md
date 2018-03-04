@@ -1,4 +1,4 @@
-# vuex-test
+# chess clock
 
 > A Vue.js project
 
