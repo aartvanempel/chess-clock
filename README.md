@@ -1,6 +1,6 @@
-# chess clock
+# Chess Clock
 
-> A Vue.js project
+> A Vue.js and Vuex project
 
 ## Build Setup
 
