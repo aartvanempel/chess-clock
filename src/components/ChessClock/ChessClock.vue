@@ -73,7 +73,7 @@
 
       gameStarted() {
         if (!this.gameStarted) {
-          this.minutes = 15
+          this.minutes = 5
           this.seconds = 0
         }
       },
