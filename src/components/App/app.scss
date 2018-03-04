@@ -1,0 +1,95 @@
+:root {
+  --color--time: #49856B;
+  --color--game-controls: #678B85;
+  --color--selected: #fcb69f;
+  --color--reset: #ffeaea;
+  --color--pause: #ffd5d5;
+}
+
+* {
+  font-family: "Roboto Mono", Avenir, sans-serif;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  margin: 0;
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  opacity: 1;
+  z-index: 3;
+  transition: all 300ms;
+}
+
+.game-started h1 {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.app-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.app-container::before,
+.app-container::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 50%;
+  transform: scale(0);
+  background-image: linear-gradient(45deg, #ffecd2 0%, #fcb69f 100%);
+  //background-image: url('https://vectr.com/tmp/b34PFDMNza/b108Tq4DJ.svg?width=640&height=640&select=b108Tq4DJpage0');
+  //background-size: cover;
+  z-index: -1;
+}
+
+.app-container::before {
+  top: 0;
+}
+
+.app-container::after {
+  bottom: 0;
+}
+
+.top-started.app-container::before,
+.bottom-started.app-container::after {
+  transform: scale(1);
+  transition: all 350ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
+}
+
+.top-started.app-container::after,
+.bottom-started.app-container::before,
+.game-ended.app-container::before,
+.game-ended.app-container::after {
+  content: none;
+}
+
+.bottom-selected.app-container::before {
+  transform: translateY(100%);
+}
+
+.top-selected.app-container::after {
+  transform: translateY(-100%);
+}
