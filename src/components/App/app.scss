@@ -6,6 +6,7 @@
 
 * {
   font-family: "Roboto Mono", Avenir, sans-serif;
+  font-weight: bold;
 }
 
 body {
@@ -33,11 +34,11 @@ h1 {
   opacity: 1;
   z-index: 3;
   transition: all 300ms;
-}
 
-.game-started h1 {
-  opacity: 0;
-  pointer-events: none;
+  .game-started & {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 .app-container {
