@@ -102,15 +102,9 @@
       },
 
       remainingTime() {
-        const minutes = this.minutes < 10
-          ? `0${this.minutes}`
-          : this.minutes
-
-        const seconds = this.seconds < 10
-          ? `0${this.seconds}`
-          : this.seconds
-
-        return `${minutes}:${seconds}`
+        return [this.minutes, this.seconds]
+          .map(value => value < 10 ? `0${value}` : value)
+          .join(':')
       },
 
       clockText() {
