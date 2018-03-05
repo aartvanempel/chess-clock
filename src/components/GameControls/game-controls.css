@@ -27,7 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--color--pause);
+  background-color: var(--color--tertiary);
 }
 
 .pause__text {
@@ -48,7 +48,7 @@
 }
 
 .reset button {
-  background-color: var(--color--reset);
+  background-color: var(--color--secondary);
 }
 
 .reset {
