@@ -20,7 +20,6 @@ export default {
     state.gameStarted = false
     state.gameEnded = false
     state.gamePaused = false
-    state.startingHalf = null
     state.clocks.forEach(clock => clock.selected = false)
   }
 }
