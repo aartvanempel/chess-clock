@@ -2,7 +2,8 @@
 
 > A Vue.js and Vuex project
 
-Demo: [aartvanempel.github.io/chess-clock](https://aartvanempel.github.io/chess-clock)
+## Demo
+[aartvanempel.github.io/chess-clock](https://aartvanempel.github.io/chess-clock)
 
 ## Build Setup
 
