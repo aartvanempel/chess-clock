@@ -1,10 +1,10 @@
 <template>
-  <section :class="classObject">
-      <button
-        :disabled="gamePaused || gameEnded"
-        @click="onClick">
-        {{ clockText }}
-      </button>
+  <section :class="['clock', `clock--${id}`, classObject]">
+    <button
+      :disabled="gamePaused || gameEnded"
+      @click="onClick">
+      {{ clockText }}
+    </button>
   </section>
 </template>
 
@@ -92,13 +92,9 @@
       ]),
 
       classObject() {
-        return [
-          'clock',
-          `clock--${this.id}`,
-          {
-            'clock--selected': this.selected
-          }
-        ]
+        return {
+          'clock--selected': this.selected
+        }
       },
 
       remainingTime() {
