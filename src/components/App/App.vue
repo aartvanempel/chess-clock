@@ -7,7 +7,7 @@
       :key="clock.id"
       :id="clock.id"
       :selected="clock.selected"
-      :setStartingHalf="setStartingHalf">
+      @firstClick="setStartingHalf">
     </chess-clock>
   </main>
 </template>

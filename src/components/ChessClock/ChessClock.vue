@@ -20,10 +20,6 @@
       selected: {
         type: Boolean,
         required: true
-      },
-      setStartingHalf: {
-        type: Function,
-        required: true
       }
     },
 
@@ -45,9 +41,8 @@
       onClick() {
         if (!this.gameStarted) {
           this.startGame()
-          this.setStartingHalf(this.id)
+          this.$emit('firstClick', this.id)
         }
-
         this.toggleSelected(this.id)
       },
 

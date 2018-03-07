@@ -21,11 +21,11 @@ button {
   font-size: 22vw;
 }
 
-.clock--1 button {
+.clock--top button {
   transform: rotate(180deg);
   margin-top: -19px;
 }
 
-.clock--2 button {
+.clock--bottom button {
   margin-top: 19px;
 }
