@@ -38,8 +38,12 @@
     },
 
     watch: {
+      gameEnded() {
+        if (this.gameEnded) this.startingHalf = null
+      },
+
       gameStarted() {
-        if (!this.gameStarted || this.gameEnded) this.startingHalf = null
+        if (!this.gameStarted) this.startingHalf = null
       }
     },
 
