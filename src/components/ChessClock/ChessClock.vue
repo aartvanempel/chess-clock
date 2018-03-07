@@ -30,7 +30,8 @@
     data() {
       return {
         minutes: 5,
-        seconds: 0
+        seconds: 0,
+        speed: 1000
       }
     },
 
@@ -67,7 +68,7 @@
     watch: {
       selected() {
         this.selected
-          ? this.decrementTime = setInterval(this.countdown, 1000)
+          ? this.decrementTime = setInterval(this.countdown, this.speed)
           : clearInterval(this.decrementTime)
       },
 
@@ -80,7 +81,7 @@
 
       gamePaused() {
         this.gamePaused && clearInterval(this.decrementTime)
-        if (!this.gamePaused && this.selected) this.decrementTime = setInterval(this.countdown, 1000)
+        if (!this.gamePaused && this.selected) this.decrementTime = setInterval(this.countdown, this.speed)
       }
     },
 
