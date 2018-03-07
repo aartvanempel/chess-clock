@@ -23,7 +23,7 @@ button {
 
 .clock--1 button {
   transform: rotate(180deg);
-  margin-bottom: 19px;
+  margin-top: -19px;
 }
 
 .clock--2 button {
