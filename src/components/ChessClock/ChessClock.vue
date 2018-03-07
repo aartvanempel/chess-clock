@@ -1,5 +1,5 @@
 <template>
-  <section :class="['clock', `clock--${id}`, classObject]">
+  <section :class="['clock', classObject]">
     <button
       :disabled="gamePaused || gameEnded"
       @click="onClick">
@@ -89,6 +89,8 @@
 
       classObject() {
         return {
+          'clock--top': this.id === 1,
+          'clock--bottom': this.id === 2,
           'clock--selected': this.selected
         }
       },
