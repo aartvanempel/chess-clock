@@ -95,6 +95,12 @@
         }
       },
 
+      endText() {
+        return (this.minutes === 0 && this.seconds === 0)
+          ? 'loser'
+          : 'winner'
+      },
+
       remainingTime() {
         return [this.minutes, this.seconds]
           .map(value => value < 10 ? `0${value}` : value)
@@ -102,8 +108,9 @@
       },
 
       clockText() {
-        const endText = (this.minutes === 0 && this.seconds === 0) ? 'loser' : 'winner'
-        return this.gameEnded ? endText : this.remainingTime
+        return this.gameEnded
+          ? this.endText
+          : this.remainingTime
       }
     }
   }
