@@ -25,7 +25,7 @@
 
     data() {
       return {
-        minutes: 5,
+        minutes: 15,
         seconds: 0,
         speed: 1000
       }
@@ -69,7 +69,7 @@
 
       gameStarted() {
         if (!this.gameStarted) {
-          this.minutes = 5
+          this.minutes = 15
           this.seconds = 0
         }
       },
