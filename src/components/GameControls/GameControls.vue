@@ -5,7 +5,7 @@
         <span class="pause__text">pause</span>
       </button>
     </div>
-    <div :class="['reset', {'reset--game-ended': gameEnded}]">
+    <div :class="['reset', {'reset--full-width': gameEnded}]">
       <button @click="onReset">reset</button>
     </div>
   </section>
