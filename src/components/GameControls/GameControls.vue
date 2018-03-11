@@ -31,4 +31,4 @@
   }
 </script>
 
-<style src="./game-controls.css" scoped></style>
+<style src="./game-controls.scss" lang="scss" scoped></style>

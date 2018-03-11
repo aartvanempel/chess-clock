@@ -116,4 +116,4 @@
   }
 </script>
 
-<style src="./chess-clock.css" scoped></style>
+<style src="./chess-clock.scss" lang="scss" scoped></style>

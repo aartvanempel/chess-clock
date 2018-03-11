@@ -14,18 +14,18 @@ button {
   background-color: transparent;
   transition: color 400ms, font-size 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
   z-index: 1;
-}
 
-.clock--selected button {
-  color: #fff;
-  font-size: 22vw;
-}
+  .clock--selected & {
+    color: #fff;
+    font-size: 22vw;
+  }
 
-.clock--top button {
-  transform: rotate(180deg);
-  margin-top: -19px;
-}
+  .clock--top & {
+    transform: rotate(180deg);
+    margin-top: -19px;
+  }
 
-.clock--bottom button {
-  margin-top: 19px;
+  .clock--bottom & {
+    margin-top: 19px;
+  }
 }
