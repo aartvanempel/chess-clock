@@ -5,7 +5,7 @@
 ## Demo
 [https://aartvanempel.github.io/chess-clock](https://aartvanempel.github.io/chess-clock)
 
-- Click on one of the clocks to start
+Click or tap on one of the clocks to start
 
 ## Build Setup
 
