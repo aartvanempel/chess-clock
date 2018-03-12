@@ -5,6 +5,8 @@
 ## Demo
 [https://aartvanempel.github.io/chess-clock](https://aartvanempel.github.io/chess-clock)
 
+- Click on one of the clocks to start
+
 ## Build Setup
 
 ``` bash
